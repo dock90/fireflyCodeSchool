@@ -1,0 +1,23 @@
+{
+  "name": "firefly",
+  "version": "1.0.0",
+  "description": "Firefly Code School focuses on getting students from all walks of life from zero to web developer.",
+  "main": "index.js",
+  "repository": "https://github.com/dock90/fireflyCodeSchool.git",
+  "author": "EdwardGoomba",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "yarn build && yarn export"
+  },
+  "dependencies": {
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
+  }
+}

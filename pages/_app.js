@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import '../components/waitList.css'
 
 const GlobalStyle = createGlobalStyle`
   body {

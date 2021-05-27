@@ -3,6 +3,7 @@ import BlockContent from '@sanity/block-content-to-react'
 import styled from 'styled-components'
 // components
 import Header from '../../components/header'
+import WaitList from '../../components/waitList'
 import client from '../../client'
 
 // styles
@@ -26,6 +27,13 @@ const Post = (props) => {
           imageOptions={{ w: 320, h: 240, fit: 'max' }}
           {...client.config()}
         />
+        <hr />
+        <h2>Start your new career as a frontend developer.</h2>
+        <p>Your roadmap to committing to a change and finally learning how to code.</p>
+        <p>+ Start from scratch</p>
+        <p>+ Learn from someone who has been in your shoes</p>
+        <p>+ Start thinking like a developer</p>
+        <WaitList />
       </Container>
     </>
   )

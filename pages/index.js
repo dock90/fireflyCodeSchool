@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 // components
+import Header from '../components/header'
 import WaitList from '../components/waitList'
 
 // styles
@@ -15,6 +16,7 @@ const Index = () => {
         <title>Learn to code from scratch | Firefly Code School</title>
         <script src="https://f.convertkit.com/ckjs/ck.5.js" />
       </Head>
+      <Header />
       <Container>
         <h1>Start your new career as a frontend developer.</h1>
         <p>Your roadmap to committing to a change and finally learning how to code.</p>

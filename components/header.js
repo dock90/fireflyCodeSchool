@@ -14,6 +14,8 @@ const Container = styled.div`
 `
 
 const Links = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-self: end;
 
   a {
@@ -29,6 +31,7 @@ const Header = () => (
     </Link>
     <Links>
       <Link href='/posts'>Posts</Link>
+      <Link href='/blockers'>Blockers</Link>
     </Links>
   </Container>
 )

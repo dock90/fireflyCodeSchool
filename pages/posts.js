@@ -12,6 +12,16 @@ const Container = styled.div`
   margin: 2rem auto;
 `
 
+const Post = styled.div`
+  margin-bottom: 1rem;
+
+  a {
+    display: grid;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+`
+
 const Posts = (props) => {
   const { posts = [] } = props
   return (
@@ -22,20 +32,17 @@ const Posts = (props) => {
         {posts.map(
           ({ _id, title = '', slug = '', _updatedAt = '' }) =>
             slug && (
-              <li key={_id}>
+              <Post key={_id}>
                 <Link href="/post/[slug]" as={`/post/${slug.current}`}>
                   <a>{title}</a>
                 </Link>{' '}
-                ({new Date(_updatedAt).toDateString()})
-              </li>
+                {new Date(_updatedAt).toDateString()}
+              </Post>
             )
         )}
         <hr />
-        <h2>Start your new career as a frontend developer.</h2>
-        <p>Your roadmap to committing to a change and finally learning how to code.</p>
-        <p>+ Start from scratch</p>
-        <p>+ Learn from someone who has been in your shoes</p>
-        <p>+ Start thinking like a developer</p>
+        <h2>Learn how to code and land that job.</h2>
+        <p>Each Monday I will send you actionable steps to get you one step closer to learning code, and getting a job as a frontend dev.</p>
         <WaitList />
       </Container>
     </>

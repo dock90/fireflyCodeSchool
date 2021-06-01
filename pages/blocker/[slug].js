@@ -28,11 +28,8 @@ const Blocker = (props) => {
           {...client.config()}
         />
         <hr />
-        <h2>Start your new career as a frontend developer.</h2>
-        <p>Your roadmap to committing to a change and finally learning how to code.</p>
-        <p>+ Start from scratch</p>
-        <p>+ Learn from someone who has been in your shoes</p>
-        <p>+ Start thinking like a developer</p>
+        <h2>Learn how to code and land that job.</h2>
+        <p>Each Monday I will send you actionable steps to get you one step closer to learning code, and getting a job as a frontend dev.</p>
         <WaitList />
       </Container>
     </>
